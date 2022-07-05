@@ -49,6 +49,6 @@ for roots, dirs, files in os.walk(path_): # walk fonksiyonu 3 sonuc verir dosya 
  
  
  
-
+main()
 #zlandirma = tr.Thread(target=main) #hizlandirma komutu
 #hizlandirma.start() # start komutu ilede baslatiyoruz

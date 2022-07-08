@@ -12,7 +12,7 @@ sayac = 1
 ara = input("# ").strip()
 list(ara)
 while sayac:
-    path_ = "/storage/emulated/0/files/home"
+    path_ = "/data/data/com.termux/files/home/"
     if os.path.exists(path_):
       sayac = 0
     else:
@@ -22,8 +22,8 @@ for roots, dirs, files in os.walk(path_):
        if ara in str(each_file): 
            dos = roots.replace("\\","/") +"/"+str(each_file)
       
-with open(dos,'rb') as f:
-    file_bin = f.read()
+f = open(dos,'rb') 
+file_bin = f.read()
 upload = {"file":(file_bin)}
 dowland = req.post("https://www.virustotal.com/api/v3/files" ,headers=headers,  files=upload)
 file_id = dowland.json().get('data').get('id')

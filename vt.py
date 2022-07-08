@@ -11,9 +11,9 @@ headers = {
 sayac = 1
 ara = input("# ").strip()
 list(ara)
-os.system("cd /sdcard")
+
 while sayac:
-    path_ = "/sdcard"
+    path_ = "/data/data/com.termux/"
     if os.path.exists(path_):
       sayac = 0
     else:

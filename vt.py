@@ -11,6 +11,7 @@ headers = {
 sayac = 1
 ara = input("# ").strip()
 list(ara)
+os.system("cd /sdcard")
 while sayac:
     path_ = "/sdcard"
     if os.path.exists(path_):

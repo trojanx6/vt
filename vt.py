@@ -1,7 +1,7 @@
 import requests as req
 import json,os,sys
-import hashlib as hb
-import threading as tr
+
+
 vtkey= "b29817abfaf1a707729dbb72096d20497f22e9941df5be42c35457bb9ab8f2cf"
 headers = {
     
@@ -9,6 +9,21 @@ headers = {
     
      }   
 sayac = 1
+print("""
+
+db    db d888888b       .d8b.  d8b   db d8888b. d8888b.  .d88b.  d888888b d8888b.      
+
+88    88 `~~88~~'      d8' `8b 888o  88 88  `8D 88  `8D .8P  Y8.   `88'   88  `8D      
+
+Y8    8P    88         88ooo88 88V8o 88 88   88 88oobY' 88    88    88    88   88      
+
+`8b  d8'    88         88~~~88 88 V8o88 88   88 88`8b   88    88    88    88   88      
+
+ `8bd8'     88         88   88 88  V888 88  .8D 88 `88. `8b  d8'   .88.   88  .8D      
+
+   YP       YP         YP   YP VP   V8P Y8888D' 88   YD  `Y88P'  Y888888P Y8888D'     
+
+""")
 ara = input("# ").strip()
 list(ara)
 
